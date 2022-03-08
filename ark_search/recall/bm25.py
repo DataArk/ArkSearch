@@ -51,6 +51,8 @@ class BM25(object):
         self.idf = {}
         self.doc_len = []
 
+        self.tokenizer = tokenizer
+
         if is_retain_docs:
             self.docs = copy.deepcopy(corpus)
 
